@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstudiantesBO - Portal de Apoyo para Bachillerato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EstudiantesBO</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav-menu" id="navMenu">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#materias">Materias</a></li>
+                        <li><a href="#herramientas">Herramientas</a></li>
+                        <li><a href="#consejos">Consejos</a></li>
+                        <li><a href="#motivacion">Motivación</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Portal de Apoyo para Estudiantes de Bachillerato</h1>
+            <p>Encuentra todos los recursos que necesitas para tener éxito en tus estudios de bachillerato. Desde materiales de estudio hasta herramientas interactivas, todo en un solo lugar.</p>
+            <a href="#materias" class="btn">Explorar Recursos</a>
+            <a href="#herramientas" class="btn btn-outline">Herramientas de Estudio</a>
+        </div>
+    </section>
+
+    <section id="materias">
+        <div class="container">
+            <div class="section-title">
+                <h2>Recursos por Materias</h2>
+            </div>
+            <div class="cards-container">
+                <div class="card subject-card math-card" onclick="showSubjectContent('matematicas')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Matemáticas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Matemáticas</h3>
+                        <p>Álgebra, geometría, cálculo, trigonometría y más. Ejercicios resueltos, explicaciones paso a paso y recursos interactivos.</p>
+                        <a href="#" class="btn">Ver Recursos</a>
+                    </div>
+                </div>
+
+                <div class="card subject-card science-card" onclick="showSubjectContent('ciencias')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ciencias">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ciencias</h3>
+                        <p>Física, química, biología y ciencias naturales. Experimentos, simulaciones y material de estudio organizado por temas.</p>
+                        <a href="#" class="btn">Ver Recursos</a>
+                    </div>
+                </div>
+
+                <div class="card subject-card literature-card" onclick="showSubjectContent('literatura')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Literatura">
+                    </div>
+                    <div class="card-content">
+                        <h3>Literatura</h3>
+                        <p>Análisis de obras, resúmenes, biografías de autores, técnicas de redacción y comprensión lectora.</p>
+                        <a href="#" class="btn">Ver Recursos</a>
+                    </div>
+                </div>
+
+                <div class="card subject-card history-card" onclick="showSubjectContent('historia')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Historia">
+                    </div>
+                    <div class="card-content">
+                        <h3>Historia</h3>
+                        <p>Historia universal, nacional y regional. Líneas de tiempo, documentos históricos y análisis de eventos clave.</p>
+                        <a href="#" class="btn">Ver Recursos</a>
+                    </div>
+                </div>
+
+                <div class="card subject-card languages-card" onclick="showSubjectContent('idiomas')">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Idiomas">
+                    </div>
+                    <div class="card-content">
+                        <h3>Idiomas</h3>
+                        <p>Inglés, francés y otros idiomas. Gramática, vocabulario, ejercicios de pronunciación y comprensión auditiva.</p>
+                        <a href="#" class="btn">Ver Recursos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenido de las materias -->
+            <div id="matematicas-content" class="subject-content">
+                <h3>Recursos de Matemáticas</h3>
+                <p>En esta sección encontrarás todo lo necesario para dominar las matemáticas de bachillerato:</p>
+                <ul>
+                    <li><strong>Álgebra:</strong> Ecuaciones, polinomios, sistemas de ecuaciones</li>
+                    <li><strong>Geometría:</strong> Trigonometría, áreas, volúmenes, geometría analítica</li>
+                    <li><strong>Cálculo:</strong> Límites, derivadas, integrales</li>
+                    <li><strong>Estadística:</strong> Probabilidad, distribuciones, análisis de datos</li>
+                </ul>
+                <h4>Recursos recomendados:</h4>
+                <ul>
+                    <li><a href="#">Libro de texto completo (PDF)</a></li>
+                    <li><a href="#">Videotutoriales explicativos</a></li>
+                    <li><a href="#">Ejercicios resueltos paso a paso</a></li>
+                    <li><a href="#">Exámenes de años anteriores</a></li>
+                </ul>
+                <button class="btn close-btn" onclick="hideSubjectContent('matematicas')">Cerrar</button>
+            </div>
+
+            <div id="ciencias-content" class="subject-content">
+                <h3>Recursos de Ciencias</h3>
+                <p>Material completo para las asignaturas científicas:</p>
+                <ul>
+                    <li><strong>Física:</strong> Mecánica, termodinámica, electromagnetismo</li>
+                    <li><strong>Química:</strong> Tabla periódica, reacciones, estequiometría</li>
+                    <li><strong>Biología:</strong> Celular, genética, ecología</li>
+                    <li><strong>Ciencias Naturales:</strong> Geología, astronomía, medio ambiente</li>
+                </ul>
+                <h4>Recursos recomendados:</h4>
+                <ul>
+                    <li><a href="#">Simulaciones interactivas de física</a></li>
+                    <li><a href="#">Guía de laboratorios de química</a></li>
+                    <li><a href="#">Atlas de anatomía interactivo</a></li>
+                    <li><a href="#">Problemas resueltos de todas las áreas</a></li>
+                </ul>
+                <button class="btn close-btn" onclick="hideSubjectContent('ciencias')">Cerrar</button>
+            </div>
+
+            <div id="literatura-content" class="subject-content">
+                <h3>Recursos de Literatura</h3>
+                <p>Todo sobre literatura universal y análisis de textos:</p>
+                <ul>
+                    <li><strong>Literatura Universal:</strong> Obras clásicas y contemporáneas</li>
+                    <li><strong>Análisis Literario:</strong> Figuras retóricas, géneros, corrientes</li>
+                    <li><strong>Redacción:</strong> Ensayos, comentarios, creación literaria</li>
+                    <li><strong>Autores:</strong> Biografías, estilos, obras principales</li>
+                </ul>
+                <h4>Recursos recomendados:</h4>
+                <ul>
+                    <li><a href="#">Resúmenes de obras obligatorias</a></li>
+                    <li><a href="#">Guías para análisis de textos</a></li>
+                    <li><a href="#">Ejemplos de comentarios de texto</a></li>
+                    <li><a href="#">Diccionario de términos literarios</a></li>
+                </ul>
+                <button class="btn close-btn" onclick="hideSubjectContent('literatura')">Cerrar</button>
+            </div>
+
+            <div id="historia-content" class="subject-content">
+                <h3>Recursos de Historia</h3>
+                <p>Recursos para comprender los procesos históricos:</p>
+                <ul>
+                    <li><strong>Historia Universal:</strong> Edades, revoluciones, guerras mundiales</li>
+                    <li><strong>Historia Nacional:</strong> Procesos políticos, económicos y sociales</li>
+                    <li><strong>Historia del Arte:</strong> Movimientos, artistas, obras</li>
+                    <li><strong>Geografía:</strong> Física, humana, económica</li>
+                </ul>
+                <h4>Recursos recomendados:</h4>
+                <ul>
+                    <li><a href="#">Líneas de tiempo interactivas</a></li>
+                    <li><a href="#">Mapas históricos</a></li>
+                    <li><a href="#">Documentos históricos originales</a></li>
+                    <li><a href="#">Guías de estudio por períodos</a></li>
+                </ul>
+                <button class="btn close-btn" onclick="hideSubjectContent('historia')">Cerrar</button>
+            </div>
+
+            <div id="idiomas-content" class="subject-content">
+                <h3>Recursos de Idiomas</h3>
+                <p>Material para aprender y practicar idiomas extranjeros:</p>
+                <ul>
+                    <li><strong>Inglés:</strong> Gramática, vocabulario, exámenes oficiales</li>
+                    <li><strong>Francés:</strong> Niveles básico e intermedio</li>
+                    <li><strong>Alemán:</strong> Introducción al idioma</li>
+                    <li><strong>Portugués:</strong> Conceptos básicos</li>
+                </ul>
+                <h4>Recursos recomendados:</h4>
+                <ul>
+                    <li><a href="#">Ejercicios de gramática interactivos</a></li>
+                    <li><a href="#">Listas de vocabulario por temas</a></li>
+                    <li><a href="#">Grabaciones para práctica auditiva</a></li>
+                    <li><a href="#">Guías para exámenes internacionales</a></li>
+                </ul>
+                <button class="btn close-btn" onclick="hideSubjectContent('idiomas')">Cerrar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="herramientas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Herramientas de Estudio Interactivo</h2>
+            </div>
+            <div class="cards-container">
+                <div class="card tool-card" onclick="openModal('plannerModal')">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Planificador de Estudio</h3>
+                    <p>Crea un horario personalizado para organizar tus sesiones de estudio y maximizar tu productividad.</p>
+                </div>
+
+                <div class="card tool-card" onclick="openModal('flashcardsModal')">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Flashcards</h3>
+                    <p>Sistema de tarjetas de memorización para repasar conceptos clave de manera efectiva.</p>
+                </div>
+
+                <div class="card tool-card" onclick="openModal('calendarModal')">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3>Calendario de Exámenes</h3>
+                    <p>Organiza y programa tus evaluaciones para nunca perder de vista las fechas importantes.</p>
+                </div>
+
+                <div class="card tool-card" onclick="openModal('calculatorModal')">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Calculadora de Notas</h3>
+                    <p>Calcula tus promedios y simula diferentes escenarios para saber qué necesitas para alcanzar tus metas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consejos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Consejos para Estudiantes</h2>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Gestión del Tiempo</h3>
+                        <p>Aprende a organizar tu tiempo eficientemente con técnicas como Pomodoro (25 minutos de estudio, 5 de descanso) y bloques de estudio por materia. Prioriza las tareas más importantes y establece metas realistas para cada sesión.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Técnicas de Estudio</h3>
+                        <p>Descubre métodos efectivos como el Feynman (explicar conceptos en tus propias palabras), mapas mentales para visualizar información y autoexplicación para mejorar tu aprendizaje. La práctica distribuida (estudiar en varias sesiones cortas) es más efectiva que el atracón.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Memorización</h3>
+                        <p>Técnicas como repetición espaciada (revisar información en intervalos crecientes) y palacios de la memoria (asociar información con lugares conocidos) para retener información a largo plazo. Las reglas mnemotécnicas y las asociaciones visuales también son muy útiles.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-sticky-note"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Tomar Apuntes</h3>
+                        <p>Métodos Cornell (dividir la página en notas, preguntas y resumen), esquemas y otras formas efectivas de tomar notas durante clases. Usa abreviaturas, colores y símbolos para destacar información importante. Revisa y organiza tus apuntes poco después de clase.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Salud y Bienestar</h3>
+                        <p>Consejos para mantener un equilibrio entre estudio, descanso (7-9 horas de sueño), alimentación balanceada y actividad física regular. Haz pausas cada 45-60 minutos de estudio, mantente hidratado y practica técnicas de relajación para manejar el estrés.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3>Motivación</h3>
+                        <p>Cómo mantener la motivación durante todo el año escolar: establece metas claras y específicas, divídelas en pasos pequeños, visualiza tu éxito y recompénsate por logros. Para superar la procrastinación, usa la regla de los 5 minutos (empieza por solo 5 minutos) y elimina distracciones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="motivation-section" id="motivacion">
+        <div class="container">
+            <h2>Mantente Motivado</h2>
+            <p>El camino del aprendizaje puede ser desafiante, pero cada esfuerzo te acerca a tus metas. Recuerda por qué empezaste y celebra cada pequeño logro.</p>
+            
+            <div class="quote" id="motivationQuote">
+                "El éxito es la suma de pequeños esfuerzos repetidos día tras día." - Robert Collier
+            </div>
+
+            <button class="btn btn-outline" onclick="newMotivationalQuote()">Más Frases Motivadoras</button>
+        </div>
+    </section>
+
+    <!-- Modales para las herramientas -->
+    <div class="tool-modal" id="plannerModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('plannerModal')">&times;</span>
+            <h2>Planificador de Estudio</h2>
+            <form id="studyPlannerForm">
+                <div class="form-group">
+                    <label for="plannerSubject">Materia:</label>
+                    <input type="text" id="plannerSubject" required>
+                </div>
+                <div class="form-group">
+                    <label for="plannerDate">Fecha:</label>
+                    <input type="date" id="plannerDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="plannerTime">Hora:</label>
+                    <input type="time" id="plannerTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="plannerDuration">Duración (minutos):</label>
+                    <input type="number" id="plannerDuration" min="15" max="240" required>
+                </div>
+                <div class="form-group">
+                    <label for="plannerTopics">Temas a estudiar:</label>
+                    <textarea id="plannerTopics" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn">Agregar a Planificación</button>
+            </form>
+            
+            <h3 style="margin-top: 30px;">Tu Plan de Estudio</h3>
+            <div id="studyPlanList">
+                <p>No hay sesiones planificadas aún.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tool-modal" id="flashcardsModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('flashcardsModal')">&times;</span>
+            <h2>Flashcards de Estudio</h2>
+            
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard" onclick="flipCard()">
+                    <div class="flashcard-front">
+                        <h3>¿Cuál es la capital de Francia?</h3>
+                    </div>
+                    <div class="flashcard-back">
+                        <h3>París</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-controls">
+                <button class="btn" onclick="prevCard()"><i class="fas fa-arrow-left"></i> Anterior</button>
+                <button class="btn" onclick="nextCard()">Siguiente <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="form-group" style="margin-top: 30px;">
+                <label for="newCardFront">Crear nueva flashcard:</label>
+                <input type="text" id="newCardFront" placeholder="Pregunta/Frente">
+                <input type="text" id="newCardBack" placeholder="Respuesta/Reverso" style="margin-top: 10px;">
+                <button class="btn" onclick="addNewCard()" style="margin-top: 10px;">Agregar Flashcard</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tool-modal" id="calendarModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('calendarModal')">&times;</span>
+            <h2>Calendario de Exámenes</h2>
+            
+            <div class="form-group">
+                <label for="examSubject">Materia:</label>
+                <input type="text" id="examSubject" required>
+            </div>
+            <div class="form-group">
+                <label for="examDate">Fecha del examen:</label>
+                <input type="date" id="examDate" required>
+            </div>
+            <div class="form-group">
+                <label for="examTopics">Temas que incluye:</label>
+                <textarea id="examTopics" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="examImportance">Importancia:</label>
+                <select id="examImportance">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+            <button class="btn" onclick="addExam()">Agregar Examen</button>
+
+            <h3 style="margin-top: 30px;">Próximos Exámenes</h3>
+            <div id="examsList">
+                <!-- Aquí se agregarán los exámenes dinámicamente -->
+                <p>No hay exámenes programados aún.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tool-modal" id="calculatorModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('calculatorModal')">&times;</span>
+            <h2>Calculadora de Notas</h2>
+            
+            <div class="grade-calculator">
+                <div class="form-group">
+                    <label for="currentGrade">Nota actual en la materia:</label>
+                    <input type="number" id="currentGrade" min="0" max="10" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="desiredGrade">Nota que deseas alcanzar:</label>
+                    <input type="number" id="desiredGrade" min="0" max="10" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label for="examWeight">Ponderación del examen (%):</label>
+                    <input type="number" id="examWeight" min="1" max="100" value="30">
+                </div>
+                <button class="btn" onclick="calculateGrade()">Calcular</button>
+
+                <div id="gradeResult" style="margin-top: 20px; font-weight: bold;"></div>
+
+                <h3 style="margin-top: 30px;">Calculadora de Promedio</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Evaluación</th>
+                            <th>Nota</th>
+                            <th>Ponderación</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gradeTableBody">
+                        <tr>
+                            <td>Examen 1</td>
+                            <td><input type="number" class="grade-input" min="0" max="10" step="0.1"></td>
+                            <td><input type="number" class="weight-input" min="1" max="100" value="25"></td>
+                        </tr>
+                        <tr>
+                            <td>Examen 2</td>
+                            <td><input type="number" class="grade-input" min="0" max="10" step="0.1"></td>
+                            <td><input type="number" class="weight-input" min="1" max="100" value="25"></td>
+                        </tr>
+                        <tr>
+                            <td>Trabajos</td>
+                            <td><input type="number" class="grade-input" min="0" max="10" step="0.1"></td>
+                            <td><input type="number" class="weight-input" min="1" max="100" value="20"></td>
+                        </tr>
+                        <tr>
+                            <td>Participación</td>
+                            <td><input type="number" class="grade-input" min="0" max="10" step="0.1"></td>
+                            <td><input type="number" class="weight-input" min="1" max="100" value="10"></td>
+                        </tr>
+                        <tr>
+                            <td>Proyecto Final</td>
+                            <td><input type="number" class="grade-input" min="0" max="10" step="0.1"></td>
+                            <td><input type="number" class="weight-input" min="1" max="100" value="20"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn" onclick="calculateAverage()" style="margin-top: 15px;">Calcular Promedio</button>
+                <div id="averageResult" style="margin-top: 15px; font-weight: bold;"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EstudiantesBO</h3>
+                    <p>Portal de apoyo para estudiantes de bachillerato con recursos educativos y herramientas de estudio.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#materias">Materias</a></li>
+                        <li><a href="#herramientas">Herramientas</a></li>
+                        <li><a href="#consejos">Consejos</a></li>
+                        <li><a href="#motivacion">Motivación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="#" onclick="showSubjectContent('matematicas')">Matemáticas</a></li>
+                        <li><a href="#" onclick="showSubjectContent('ciencias')">Ciencias</a></li>
+                        <li><a href="#" onclick="showSubjectContent('literatura')">Literatura</a></li>
+                        <li><a href="#" onclick="showSubjectContent('historia')">Historia</a></li>
+                        <li><a href="#" onclick="showSubjectContent('idiomas')">Idiomas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contacto@estudiantesbo.com</li>
+                        <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Ciudad, País</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 EstudiantesBO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
